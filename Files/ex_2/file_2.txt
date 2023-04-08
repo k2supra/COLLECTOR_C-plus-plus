@@ -1,0 +1,5 @@
+Rows: 10
+Symbols: 1101
+Vowels: 362
+Not vowels: 546
+Numbers: 1
