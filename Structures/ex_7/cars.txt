@@ -1,0 +1,5 @@
+Toyota Corolla 2018 8000
+Honda Civic 2020 12000
+Hyundai Elantra 2019 5000
+Nissan GTR 2019 75000
+Lexus LS300 2017 6000
