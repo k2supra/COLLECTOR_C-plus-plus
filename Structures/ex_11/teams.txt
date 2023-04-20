@@ -1,0 +1,5 @@
+Team A,52,1
+Team B,34,41
+Team C,25,18
+Team D,8,13
+Team E,45,16

@@ -1,0 +1,5 @@
+Fanta 17 1.25
+Buisquit 3 3.4
+Coca-cola_zero 50 1.35
+Coffe 35 2.3
+Romashka 3 0.25

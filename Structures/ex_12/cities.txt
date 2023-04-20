@@ -1,0 +1,5 @@
+Kyiv,Ukraine,2952000,839
+New York,USA,8538000,468.9
+Tokyo,Japan,13929286,2191.66
+Zhmerinka,Ukraine,100000,220.66
+Kryvyi Rig,Ukraine,236842,350.46
