@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{234bf564-6b26-478c-a755-80fdb4138542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{5655551d-c646-4c9f-83c4-2033c2e26919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{e79c1cd6-983c-4715-a6c6-e82ae1ea03c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{ee93a135-a773-423f-9fc0-24c241ec149c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{9e5ab1e8-67e5-46cd-be18-0adb8702b512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\cart">
+      <UniqueIdentifier>{898f0330-6916-42a4-bef7-41e7da8c6f47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\pc">
+      <UniqueIdentifier>{08ee36c9-e5f6-4b5c-a260-a969d9568af3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\pc_provider">
+      <UniqueIdentifier>{39c5b387-08be-42d9-b35d-56e11c5f8e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\user">
+      <UniqueIdentifier>{6b3ec99a-16a9-4b17-9e38-584837c730f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\user_provider">
+      <UniqueIdentifier>{a7d0f476-9080-4d57-9bd4-4277cd99f339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\screen">
+      <UniqueIdentifier>{e69ef87a-967b-4ae8-a5d1-daa3be52b97c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\screen\admin">
+      <UniqueIdentifier>{9e18c0f4-bd29-481c-ac5f-dddd9ef91511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\screen\client">
+      <UniqueIdentifier>{df59dc1d-f825-48cd-af31-c6e0dd9de549}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\cart\cart.cpp">
+      <Filter>core\cart</Filter>
+    </ClCompile>
+    <ClCompile Include="core\user_provider\user_provider.cpp">
+      <Filter>core\user_provider</Filter>
+    </ClCompile>
+    <ClCompile Include="core\user\user.cpp">
+      <Filter>core\user</Filter>
+    </ClCompile>
+    <ClCompile Include="core\pc_provider\pc_provider.cpp">
+      <Filter>core\pc_provider</Filter>
+    </ClCompile>
+    <ClCompile Include="core\pc\pc.cpp">
+      <Filter>core\pc</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\screen\screen.cpp">
+      <Filter>ui\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\screen\admin\admin_screen.cpp">
+      <Filter>ui\screen\admin</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\screen\client\client_screen.cpp">
+      <Filter>ui\screen\client</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\cart\cart.h">
+      <Filter>core\cart</Filter>
+    </ClInclude>
+    <ClInclude Include="core\user_provider\user_provider.h">
+      <Filter>core\user_provider</Filter>
+    </ClInclude>
+    <ClInclude Include="core\user\user.h">
+      <Filter>core\user</Filter>
+    </ClInclude>
+    <ClInclude Include="core\pc_provider\pc_provider.h">
+      <Filter>core\pc_provider</Filter>
+    </ClInclude>
+    <ClInclude Include="core\pc\pc.h">
+      <Filter>core\pc</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\lib.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\screen\screen.h">
+      <Filter>ui\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\screen\admin\admin_screen.h">
+      <Filter>ui\screen\admin</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\screen\client\client_screen.h">
+      <Filter>ui\screen\client</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\pcshop\data\pcdata.csv">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\..\pcshop\data\userdata.csv">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+</Project>
