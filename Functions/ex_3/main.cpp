@@ -128,7 +128,7 @@ public:
 int main() {
     Date myDate(31, 12, 2022);
 
-     cout << "The date of star: " << myDate << endl;
+     cout << "The date of start: " << myDate << endl;
 
     ++myDate;
      cout << "The date after +1 day: " << myDate <<  endl;
