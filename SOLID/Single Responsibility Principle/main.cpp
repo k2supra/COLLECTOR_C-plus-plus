@@ -6,10 +6,10 @@ int main()
 
 	user1.setFullName("Bob Marley");
 	user1.setGmail("1234@gmail.com");
-	user1.setSubscriptionType("BASIC");
+	user1.setSubscriptionType(SubscriptionType::BASIC);
 
 	cout << "User: " << user1.getFullName() << endl;
 	cout << "Gmail: " << user1.getGmail() << endl;
-	cout << "Subscription type: " << ((user1.hasUnlimitedContentAccess()) ? "BASIC" : "PREMIUM") << endl;
-	cout << "Unlimited access: " << ((user1.hasUnlimitedContentAccess()) ? "FALSE" : "TRUE") << endl;
+	cout << "Subscription Type: " << (static_cast<int>(user1.getSubscriptionType()) ? "PREMIUM" : "BASIC") << endl;
+	cout << "Subscription Type: " << (user1.hasUnlimitedContentAccess() ? "YES" : "NO") << endl;
 }

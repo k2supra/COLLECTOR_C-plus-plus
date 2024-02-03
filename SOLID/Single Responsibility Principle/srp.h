@@ -2,7 +2,6 @@
 #define SRP_H
 
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -15,7 +14,7 @@ enum class SubscriptionType
 class User
 {
 public:
-    User(){}
+    User() : subscriptionType(SubscriptionType::BASIC) {}
 
     void setFullName(const string& fullName)
     {
@@ -27,7 +26,7 @@ public:
         this->gmail = gmail;
     }
 
-    void setSubscriptionType(const string& subscriptionType)
+    void setSubscriptionType(SubscriptionType subscriptionType)
     {
         this->subscriptionType = subscriptionType;
     }
@@ -43,15 +42,20 @@ public:
         return gmail;
     }
 
+    SubscriptionType getSubscriptionType()
+    {
+        return subscriptionType;
+    }
+
     bool hasUnlimitedContentAccess() const
     {
-        return subscriptionType == "BASIC";
+        return subscriptionType == SubscriptionType::PREMIUM;
     }
 
 private:
     string fullName;
     string gmail;
-    string subscriptionType;
+    SubscriptionType subscriptionType;
 };
 
 #endif
