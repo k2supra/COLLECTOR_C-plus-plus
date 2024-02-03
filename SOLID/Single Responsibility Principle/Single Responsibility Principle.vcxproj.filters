@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{51955800-940f-471e-a360-594c79049e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="S">
+      <UniqueIdentifier>{ec3fa13c-608c-4d48-9075-fd44bc442318}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="srp.h">
+      <Filter>S</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
