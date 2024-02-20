@@ -171,10 +171,6 @@ public:
 	}
 };
 
-void performing(const FactoryOfWeapon& fow)
-{
-	fow.createWeapon();
-}
 
 class PrototypeFactory
 {
