@@ -7,7 +7,9 @@ int main()
 	cout << endl;
 
 	cout << "CLONE" << endl;
-	PrototypeFactory prot_sword;
-	Prototype* clone_sword = prot_sword.createClone(Weapon_for_clone::SWORD);
+	PrototypeFactory prototype;
+	PrototypeFactory& factory = PrototypeFactory::getInstance();
+	Prototype* clone_sword = prototype.createClone(Weapon_for_clone::SWORD);
+	Prototype* clone_bow = prototype.createClone(Weapon_for_clone::BOW);
 
 }

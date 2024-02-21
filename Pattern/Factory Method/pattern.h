@@ -25,6 +25,8 @@ public:
 	virtual string damageType() const = 0;
 	virtual int criticalDamageBonus() const = 0;
 	virtual ~Weapon() {};
+
+	
 };
 
 class Sword : public Weapon, public Prototype
@@ -180,6 +182,12 @@ public:
 		prototypes[Weapon_for_clone::SWORD] = new Sword();
 		prototypes[Weapon_for_clone::BOW] = new Bow();
 		prototypes[Weapon_for_clone::DAGGER] = new Dagger();
+	}
+
+	static PrototypeFactory& getInstance()
+	{
+		static PrototypeFactory instance;
+		return instance;
 	}
 
 	Prototype* createClone(Weapon_for_clone weapon_for_clone)
