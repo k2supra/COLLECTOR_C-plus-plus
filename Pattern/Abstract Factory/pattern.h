@@ -217,6 +217,11 @@ public:
 		prototypes[Items::TVSET] = new TV();
 		
 	};
+	static PrototypeFactory& getInstance()
+	{
+		static PrototypeFactory instance;
+		return instance;
+	}
 	Prototype* createClone(Items items)
 	{
 		return prototypes[items]->clone();
