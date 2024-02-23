@@ -30,6 +30,19 @@ int main()
     product->ListParts();
     delete product;
 
+    cout << "CLONE" << endl;
+    PrototypeFactory* prot_fact = new PrototypeFactory();
+    Product* new_product = new Product();
+    director->buildMedium();
+    new_product = builder->getProduct();
+    new_product->ListParts();
+    Prototype* cloned = new_product->cloneItem();
+    cout << "Cloned List View" << endl;
+    dynamic_cast<Product*>(cloned)->ListParts();
+
+    
+    delete product;
+
     delete builder;
     delete director;
 

@@ -1,9 +1,25 @@
 #include <iostream>
 #include <vector>
+#include <unordered_map>
 
 using namespace std;
 
-class Product
+
+enum setState
+{
+	MINIMUM = 1,
+	MEDIUM,
+	FULL
+};
+
+class Prototype
+{
+public:
+	Prototype() {};
+	virtual Prototype* cloneItem() const { return nullptr; };
+};
+
+class Product : public Prototype
 {
 public:
 	vector <string> parts;
@@ -21,6 +37,13 @@ public:
 				cout << parts[i] + ",";
 			}
 		}
+	}
+	Prototype* cloneItem() const override
+	{
+		Product* cloned_product = new Product();
+		cloned_product->parts = this->parts;
+		cout << "CLONED" << endl;
+		return cloned_product;
 	}
 };
 
@@ -65,7 +88,7 @@ public:
 };
 
 
-class Director : Builder
+class Director : public Builder, public Prototype
 {
 private:
 	Builder* builder;
@@ -89,5 +112,9 @@ public:
 	{
 		buildMedium();
 		this->builder->produceComponent3();
+	}
+	void showProduct() const
+	{
+		this->builder->product->ListParts();
 	}
 };
