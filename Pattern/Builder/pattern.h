@@ -17,6 +17,12 @@ class Prototype
 public:
 	Prototype() {};
 	virtual Prototype* cloneItem() const { return nullptr; };
+
+	static Prototype& getInstance()
+	{
+		static Prototype instance;
+		return instance;
+	}
 };
 
 class Product : public Prototype
