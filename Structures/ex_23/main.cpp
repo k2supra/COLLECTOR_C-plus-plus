@@ -67,7 +67,7 @@ public:
         Node<T>* temp = resultStack.top;
 
         while (temp->next != nullptr)
-        {
+        { 
             temp = temp->next;
         }
 
