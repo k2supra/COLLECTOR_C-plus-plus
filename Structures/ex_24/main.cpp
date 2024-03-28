@@ -58,22 +58,6 @@ public:
 		return size;
 	}
 
-	/*Queue operator=(const Queue& other)
-	{
-		while (!isEmpty())
-		{
-			deleteFirstQueue();
-		}
-
-		Node<T>* temp = other.head;
-		while (temp != nullptr)
-		{
-			addLastQueue(temp->data);
-			temp = temp->next;
-		}
-		return *this;
-	}*/
-
 	Queue operator+(const Queue& other)
 	{
 		Queue newQueue;
