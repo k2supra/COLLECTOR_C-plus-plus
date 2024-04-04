@@ -22,6 +22,8 @@ public:
 	{
 		cout << "Value1: " << this->value1 << "\nValue2: " << this->value2 << endl;
 	}
+
+	~Base() {};
 };
 
 template <typename T1, typename T2, typename T3, typename T4>
@@ -46,6 +48,8 @@ public:
 	{
 		cout << "Value1: " << this->value1 << "\nValue2: " << this->value2 << "\nValue3: " << this->value3 << "\nValue4: " << this->value4 << endl;
 	}
+
+	~Child1() {};
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6>
@@ -72,6 +76,8 @@ public:
 	{
 		cout << "Value1: " << this->value1 << "\nValue2: " << this->value2 << "\nValue3: " << this->value3 << "\nValue4: " << this->value4 << "\nValue5: " << this->value5 << "\nValue6: " << this->value6 << endl;
 	}
+
+	~Child2() {};
 };
 
 int main()
